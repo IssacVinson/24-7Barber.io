@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Platinum Plus Barber Shop | Affordable Haircuts in Raleigh</title>
+  <meta name="description" content="Affordable barber services in Raleigh, NC. Great haircuts at reasonable prices, kid-friendly, with restroom available. Book your appointment today!"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #0f0f0f;
+      --black: #000;
+      --gold: #d4af37;
+      --gray: #888;
+      --light: #f5f5f5;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--dark);
+      color: #fff;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    a { text-decoration: none; color: var(--gold); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      height: 100vh;
+      min-height: 600px;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27c1d4?auto=format&fit=crop&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-content h1 {
+      font-size: 4.5rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+    .hero-content p { font-size: 1.4rem; margin-bottom: 2rem; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--black);
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      margin: 10px;
+      transition: all 0.3s;
+    }
+    .btn:hover { background: #fff; transform: translateY(-3px); }
+
+    section { padding: 80px 0; }
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: var(--gold);
+    }
+
+    .services-grid, .barbers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .card:hover { transform: translateY(-10px); }
+    .card h3 { color: var(--gold); margin: 1rem 0; }
+    .price { font-size: 1.5rem; font-weight: 600; color: #fff; }
+
+    .booking {
+      background: var(--black);
+      text-align: center;
+    }
+    .booking .btn { font-size: 1.3rem; padding: 18px 50px; }
+
+    .hours { max-width: 500px; margin: 2rem auto; font-size: 1.1rem; }
+    .hours p { margin: 0.5rem 0; }
+
+    footer {
+      background: var(--black);
+      padding: 60px 0 20px;
+      text-align: center;
+      color: var(--gray);
+    }
+    .social a { color: var(--gold); margin: 0 15px; font-size: 1.8rem; }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 3rem; }
+      h2 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container hero-content">
+      <h1>Platinum Plus Barber Shop</h1>
+      <p>Affordable Haircuts • Kid-Friendly • Reasonable Prices</p>
+      <a href="YOUR_BOOKING_LINK_HERE" class="btn" target="_blank">Book Appointment Now</a>
+      <a href="#services" class="btn" style="background:transparent; border:2px solid var(--gold); color:var(--gold);">View Services</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Regular Haircut</h3>
+          <p>Fade, taper, scissor cut — clean, quick, and affordable.</p>
+          <div class="price">$20 – $30</div>
+        </div>
+        <div class="card">
+          <h3>Kids Haircut</h3>
+          <p>Gentle cuts perfect for children — we're kid-friendly!</p>
+          <div class="price">$15 – $25</div>
+        </div>
+        <div class="card">
+          <h3>Beard Trim</h3>
+          <p>Shape-up with line-up and hot towel finish.</p>
+          <div class="price">$15 – $20</div>
+        </div>
+        <div class="card">
+          <h3>Line-Up & Edge-Up</h3>
+          <p>Razor-sharp edges and clean design.</p>
+          <div class="price">$10 – $15</div>
+        </div>
+        <div class="card">
+          <h3>Head Shave</h3>
+          <p>Smooth bald cut or razor shave.</p>
+          <div class="price">$25 – $35</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="book">
+    <div class="container">
+      <h2>Get a Fresh Cut Today</h2>
+      <p>Book online 24/7 — choose your time and service. Fast, easy, and affordable.</p>
+      <a href="YOUR_BOOKING_LINK_HERE" class="btn" target="_blank">Book Your Appointment</a>
+      <p style="margin-top:2rem;">Or call us: <a href="tel:+19193373909" style="color:#fff;">(919) 337-3909</a></p>
+
+      <h3 style="margin: 3rem 0 1rem; text-align:center;">Business Hours</h3>
+      <div class="hours">
+	<p><strong>Monday:</strong> 10:00 AM – 12:00 AM</p>
+        <p><strong>Tuesday:</strong> 10:00 AM – 12:00 AM</p>
+        <p><strong>Wednesday:</strong> 10:00 AM – 12:00 AM</p>
+        <p><strong>Thursday:</strong> 10:00 AM – 12:00 AM</p>
+        <p><strong>Friday:</strong> 10:00 AM – 12:00 AM</p>
+        <p><strong>Saturday:</strong> 10:00 AM – 12:00 AM</p>
+        <p><strong>Sunday:</strong> 1:00 PM – 6:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="container">
+      <h2>About Us</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto 2rem;">We're a friendly, neighborhood barber shop known for offering quality haircuts at reasonable prices. Great for kids, with a clean restroom available. Walk-ins welcome — come get faded!</p>
+      <p style="text-align:center; font-size:1.2rem;">Address: <strong>918 Rock Quarry Rd, Raleigh, NC 27610</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h2>Platinum Plus Barber Shop</h2>
+      <p>918 Rock Quarry Rd • Raleigh, NC 27610</p>
+      <p><a href="tel:+19193373909" style="color:var(--gold);">(919) 337-3909</a></p>
+      <p>Open late most days — see hours above</p>
+      <p style="margin:1.5rem 0;">Highlights: Good for kids • Restroom available</p>
+      <div class="social">
+        <a href="https://facebook.com/PlatinumPlusBarbers" target="_blank">Facebook</a>
+      </div>
+      <p style="margin-top:2rem;">© 2026 Platinum Plus Barber Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
